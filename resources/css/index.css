@@ -1,0 +1,158 @@
+body {
+    background-color: #0c1b33;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border-radius: 40px;
+    border-color: transparent;
+    background-color: #40798c;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #61A4BB;
+    cursor: pointer;
+}
+
+button h4 {
+    margin: 6px 14px;
+    color: white;
+    font-family: Varta;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Eczar;
+    font-weight: ExtraBold;
+    font-size: 46px;
+    color: #EAD2AC;
+    margin: 0px;
+}
+
+.body {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-around;
+    top: 20px;
+    flex-wrap: wrap;
+}
+
+.spread {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.container {
+    background-color: transparent;
+    width: 150px;
+    height: 214px;
+    border-radius: 15px;
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cardFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cardFace-front {
+    transform: rotateY(180deg);
+} 
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 800px;
+    height: 650px;
+    min-width: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #40798c;
+    border-radius: 40px;
+    border: none;
+}
+
+.detail h3 {
+    font-family: Eczar;
+    font-weight: Bold;
+    font-size: 32px;
+    color: #EAD2AC;
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+.detail h4 {
+    font-family: Varta;
+    font-weight: 500;
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.detail p {
+    font-family: Varta;
+    font-weight: SemiBold;
+    font-size: 24px;
+    color: white;
+    text-align: justify;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 40px;
+    margin: 10px 0px;
+}
+
